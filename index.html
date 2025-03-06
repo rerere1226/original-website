@@ -6,11 +6,15 @@
     <title>フィリピン紹介</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
 
   <body>
     <header class="header">
-      <h1>The Philippines</h1>
+      <div class="header-logo">
+        <img src="./assets/img/logo.png" alt="Logo"> <!-- ロゴを追加 -->
+    </div>
+
       <div class="outer-menu">
         <input class="checkbox-toggle" type="checkbox" />
         <div class="hamburger">
@@ -20,7 +24,7 @@
           <div>
             <div>
               <ul>
-                <li><a href="#slide-container">About</a></li>
+                <li><a href="#main-visual">Home</a></li>
                 <li><a href="#place1">Manila</a></li>
                 <li><a href="#place2">Boracay</a></li>
                 <li><a href="#place3">Palawan</a></li>
@@ -34,7 +38,16 @@
       </div>
     </header>
 
-    <section class="main-visual">
+
+    <h2 class="title">
+      <span class="main-text">The Philippines</span>  
+      <br>
+      <span class="tagline">Where You Arrive as a Guest, But Stay as Family</span>
+    </h2>
+    
+
+
+    <section class="main-visual" id="main-visual">
         <div class="slide-container">
             <div class="slideimg"><img src="./assets/img/palawan/elnido.jpg" alt="ooo" /></div>
             <div class="slideimg"><img src="./assets/img/bohol.jpg" alt="bohol"></div>
@@ -44,14 +57,15 @@
         </div>
     </section>
     
+    /*ワープボタン*/
+    <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
 
     <main>
       <section class="place-list">
         <div class="wrap slide-paused" ontouchstart="">
           <ul class="slideshow">
             <li class="content content-hover">
-              <a href="#place1"></a>
-              <img src="./assets/img/manila/manilacity.jpg" alt="Manila"></li>
+              <a href="#place1"><img src="./assets/img/manila/manilacity.jpg" alt="Manila"></a></li>
               <li class="content content-hover">
               <a href="#place2">
               <img src="./assets/img/boracay/bigsunset.jpg" alt="Boracay"></a></li>
@@ -66,7 +80,7 @@
               <img src="./assets/img/bohol/chocolatehills.jpg" alt="Bohol"></a></li>
             <li class="content content-hover">
               <a href="#place6">
-              <img src="./assets/img/davao/davao.jpg" alt="Davao"></a></li>
+              <img src="./assets/img/davao/semallake.jpg" alt="Davao"></a></li>
           </ul>
 
           <ul class="slideshow">
@@ -86,72 +100,10 @@
               <a href="#place5">
               <img src="./assets/img/bohol/chocolatehills.jpg" alt="Bohol"></a></li>
             <li class="content content-hover">
-              <a href="#place6">
-              <img src="./assets/img/davao/davao.jpg" alt="Davao"></a></li>
+              <a href="#place6" class="place6">
+              <img src="./assets/img/davao/semallake.jpg" alt="Davao"></a></li>
           </ul>
 
-          <ul class="slideshow">
-            <li class="content content-hover">
-              <a href="#place1"></a>
-              <img src="./assets/img/manila/manilacity.jpg" alt="Manila"></li>
-            <li class="content content-hover">
-              <a href="#place2">
-              <img src="./assets/img/boracay/bigsunset.jpg" alt="Boracay"></a></li>
-            <li class="content content-hover">
-              <a href="#place3">
-              <img src="./assets/img/palawan/main-elnido.jpg" alt="Palawan"></a></li>
-            <li class="content content-hover">
-              <a href="#place4">
-              <img src="./assets/img/cebu/oslob-ue.jpg" alt="Cebu"></a></li>
-            <li class="content content-hover">
-              <a href="#place5">
-              <img src="./assets/img/bohol/chocolatehills.jpg" alt="Bohol"></a></li>
-            <li class="content content-hover">
-              <a href="#place6">
-              <img src="./assets/img/davao/davao.jpg" alt="Davao"></a></li>
-          </ul>
-
-          <ul class="slideshow">
-            <li class="content content-hover">
-              <a href="#place1"></a>
-              <img src="./assets/img/manila/manilacity.jpg" alt="Manila"></li>
-            <li class="content content-hover">
-              <a href="#place2">
-              <img src="./assets/img/boracay/bigsunset.jpg" alt="Boracay"></a></li>
-            <li class="content content-hover">
-              <a href="#place3">
-              <img src="./assets/img/palawan/main-elnido.jpg" alt="Palawan"></a></li>
-            <li class="content content-hover">
-              <a href="#place4">
-              <img src="./assets/img/cebu/oslob-ue.jpg" alt="Cebu"></a></li>
-            <li class="content content-hover">
-              <a href="#place5">
-              <img src="./assets/img/bohol/chocolatehills.jpg" alt="Bohol"></a></li>
-            <li class="content content-hover">
-              <a href="#place6">
-              <img src="./assets/img/davao/davao.jpg" alt="Davao"></a></li>
-          </ul>
-
-          <ul class="slideshow">
-            <li class="content content-hover">
-              <a href="#place1"></a>
-              <img src="./assets/img/manila/manilacity.jpg" alt="Manila"></li>
-            <li class="content content-hover">
-              <a href="#place2">
-              <img src="./assets/img/boracay/bigsunset.jpg" alt="Boracay"></a></li>
-            <li class="content content-hover">
-              <a href="#place3">
-              <img src="./assets/img/palawan/main-elnido.jpg" alt="Palawan"></a></li>
-            <li class="content content-hover">
-              <a href="#place4">
-              <img src="./assets/img/cebu/oslob-ue.jpg" alt="Cebu"></a></li>
-            <li class="content content-hover">
-              <a href="#place5">
-              <img src="./assets/img/bohol/chocolatehills.jpg" alt="Bohol"></a></li>
-            <li class="content content-hover">
-              <a href="#place6">
-              <img src="./assets/img/davao/davao.jpg" alt="Davao"></a></li>
-          </ul>
         </div>
       </section>
 
@@ -187,19 +139,16 @@
         <div class="images">
           <div class="image-wrapper image-wrapper1">
             <img src="assets/img/boracay/boracaybeach.jpg" alt="ホワイトビーチ">
-
+            <h2 class="image-caption">White Beach</h2>
           </div>
           <div class="image-wrapper image-wrapper2">
             <img src="./assets/img/boracay/sunset.jpg" alt="夕日">
-
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">Sunset</h2>
           </div>
           <div class="image-wrapper image-wrapper3">
-            <img src="./assets/img/boracay/beachtrees.jpg" alt="木々">
-
-            <h2 class="image-caption"></h2>
+            <img src="./assets/img/boracay/Willy'sRock.jpg" alt="ウィリーロック">
+            <h2 class="image-caption">Willy's Rock</h2>
           </div>
-
         </div>
         <div class="activities">
             <img src="./assets/img/boracay/para.jpg" alt="パラセーリング">
@@ -215,15 +164,15 @@
         <div class="images">
           <div class="image-wrapper image-wrapper1">
             <img src="./assets/img/palawan/Puerto Princesa Subterranean River National Park.jpg" alt="地下河川国立公園">
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">Puerto-Princesa</h2>
           </div>
           <div class="image-wrapper image-wrapper2">
             <img src="./assets/img/palawan/elnido.jpg" alt="エルニド">
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">El nido</h2>
           </div>
           <div class="image-wrapper image-wrapper3">
             <img src="./assets/img/palawan/rock.jpg" alt="コロン">
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">Coron</h2>
           </div>
         </div>
         <div class="activities">
@@ -239,16 +188,16 @@
         <img class="main-image" src="./assets/img/cebu/oslob-ue.jpg" alt="セブの風景">
         <div class="images">
           <div class="image-wrapper image-wrapper1">
-            <img src="./assets/img/cebu/cebuchurch.jpg" alt="教会">
-            <h2 class="image-caption"></h2>
+            <img src="./assets/img/cebu/cebuchurch.jpg" alt="シマラ教会">
+            <h2 class="image-caption">Simala Parish Church</h2>
           </div>
           <div class="image-wrapper image-wrapper2">
             <img src="./assets/img/cebu/tumalog.jpg" alt="ツマログ滝">
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">Tumalog Falls</h2>
           </div>
           <div class="image-wrapper image-wrapper3">
             <img src="./assets/img/cebu/oslobbeach.jpg" alt="オスロブ">
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">Oslob</h2>
           </div>
         </div>
         <div class="activities">
@@ -262,59 +211,59 @@
       <!-- ボホール島 -->
       <section class="place5" id="place5">
         <p class="text-sd-appear">Bohol</p>
-        <img class="main-image" src="./assets/img/bohol/chocolatehills.jpg" alt="ボホール風景">
+        <img class="main-image" src="./assets/img/bohol/chocolatehills.jpg" alt="ボホール島の風景">
         <div class="images">
           <div class="image-wrapper image-wrapper1">
             <img src="./assets/img/bohol/monkey.jpg" alt="ターシャ保護区">
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">Tarsier</h2>
           </div>
           <div class="image-wrapper image-wrapper2">
             <img src="./assets/img/bohol/boholriver.jpg" alt="ロボックリバー">
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">Loboc River</h2>
           </div>
           <div class="image-wrapper image-wrapper3">
             <img src="./assets/img/bohol/manmade.jpg" alt="マンメイド">
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">Manmade</h2>
           </div>
         </div>
         <div class="activities">
           <img src="./assets/img/bohol/boholriver.jpg" alt="アイランドホッピング">
           <img src="./assets/img/bohol/diving (2).jpg" alt="ダイビング">
-          <img src="https://placehold.jp/300x450.png" alt="ジンベエザメツアー">
+          <img src="./assets/img/bohol/zipline.jpg" alt="ジップライン">
       </div>
       </section>
       
       <!-- ダバオ -->
       <section class="place6" id="place6">
         <p class="text-sd-appear">Davao</p>
-        <img class="main-image" src="./assets/img/davao/davao.jpg" alt="ダバオの風景">
+        <img class="main-image" src="./assets/img/davao/semallake.jpg" alt="ダバオの風景">
         <div class="images">
           <div class="image-wrapper image-wrapper1">
             <img src="./assets/img/davao/baganga.jpg" alt="バガンガ">         
-            <h2 class="image-caption"></h2>
+            <h2 class="image-caption">Baganga</h2>
           </div>
           <div class="image-wrapper image-wrapper2">
-            <img src="./assets/img/davao/apo.jpg" alt="マウント・アポ">         
-            <h2 class="image-caption"></h2>
+            <img src="./assets/img/davao/davaofestival.jpg" alt="Kadayawan festival">         
+            <h2 class="image-caption">Kadawayan Festival</h2>
           </div>
           <div class="image-wrapper image-wrapper3">
-            <img src="./assets/img/davao/semallake.jpg" alt="セマル湖">      
-            <h2 class="image-caption"></h2>
+            <img src="./assets/img/davao/apo.jpg" alt="アポ山">      
+            <h2 class="image-caption">Mount Apo</h2>
           </div>
         </div>
         <div class="activities">
-          <img src="./assets/img/davao/davaofestival.jpg" alt="祭り">
+          <img src="./assets/img/davao/eagle.jpg" alt="イーグル">
+          <img src="./assets/img/davao/durian (2).jpg" alt="ドリア">
           <img src="./assets/img/davao/crocodile.jpg" alt="クロコダイル">
-          <img src="./assets/img/davao/" alt="">
       </div>
       </section>
 
     </main>
 
-    <!-- <footer>
-      <small>Copyright &copy; </small>
-    </footer> -->
-  
+
+    <footer class="footer">
+      <h4 class="copyright">© 2025 Reina Reserved.</h4>
+    </footer>
 
     <script src="./assets/js/app.js"></script>
   </body>

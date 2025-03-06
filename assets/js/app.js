@@ -1,4 +1,4 @@
-//main-image　スライドインスライドイン
+//main-image　スライドイン
 document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll(".main-image");
   
