@@ -15,3 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const descriptions = document.querySelectorAll(".text-description");
+
+  function fadeInOnScroll() {
+    descriptions.forEach((desc) => {
+      const rect = desc.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.8) {
+        desc.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", fadeInOnScroll);
+  fadeInOnScroll(); // 初回実行
+});
+

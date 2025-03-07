@@ -479,6 +479,23 @@ a:active {
   z-index: 1;
 }
 
+/*紹介文*/
+.text-description {
+  opacity: 0; /* 初期状態で非表示 */
+  transform: translateY(20px); /* ちょっと下から */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  max-width: 600px;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 20px; /* "Manila" の横に配置 */
+  display: inline-block;
+}
+
+.text-description.show {
+  opacity: 1;
+  transform: translateY(0); /* 元の位置に戻る */
+}
+
 
 /*文字スライドして固定*/
 p {
